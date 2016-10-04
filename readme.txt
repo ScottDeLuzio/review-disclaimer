@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: plugin, shortcode, template, text, review, disclaimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9AGSF4W2HTR6W
 Requires at least: 3.1
-Tested up to: 4.0
-Stable tag: 1.0.2
+Tested up to: 4.5
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,9 @@ If you delete the text, and still have the shortcode inside a page or post, it w
 3. Your disclaimer is now in the body of your article to clearly identify that you are receiving compensation.
 
 == Changelog ==
+= 1.0.3 =
+* Minor updates
+
 = 1.0.2 =
 * Update WP 4.0 compatibility
 
@@ -68,5 +71,5 @@ If you delete the text, and still have the shortcode inside a page or post, it w
 * Initial release.
 
 == Upgrade Notice ==
-= 1.0.2 =
-* Update WP 4.0 compatibility
+= 1.0.3 =
+* Minor updates
