@@ -1,14 +1,26 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+  exit; // Exit if accessed directly
+}
+$support_url	= 'http://wordpress.org/support/plugin/review-disclaimer';
+$support_link	= sprintf(
+	wp_kses(
+		__( 'To report any issues with this plugin, please visit the <a href="%s">support page on WordPress.org</a>.', 'review-disclaimer' ),
+		array( 'a' => array( 'href' => array() ) ) ),
+		esc_url( $support_url )
+	); ?>
+?>
 <div class="wrap">
 	<div class="postbox">
-		<h2>Review Disclaimer Options</h2>
-		<p>Enter in a default disclaimer text, which you would like to include inside your reviews of products or services.</p>
+		<h2><?php _e( 'Review Disclaimer Options', 'review-disclaimer' ); ?></h2>
+		<p><?php _e( 'Enter in a default disclaimer text, which you would like to include inside your reviews of products or services.', 'review-disclaimer' ); ?></p>
 		<form method='post' action='options.php'>
 			<?php wp_nonce_field( 'update-options' ); ?>
 			<?php settings_fields( 'oizuled-review-disclaimer-option-group' ); ?>
 			<table class="form-table">
 				<tr valign="top">
-					<th scope="row">Enter the text you wish to use to disclose your relationship with the company, product, or service you are reviewing.</th>
-					<td><textarea rows="5" cols="36" name="oizuled-review-disclaimer"><?php echo get_option('oizuled-review-disclaimer'); ?></textarea><br />Use shortcode <strong>[ReviewDisclaimer]</strong></td>
+					<th scope="row"><?php _e( 'Enter the text you wish to use to disclose your relationship with the company, product, or service you are reviewing.', 'review-disclaimer' ); ?></th>
+					<td><textarea rows="5" cols="36" name="oizuled-review-disclaimer"><?php echo get_option('oizuled-review-disclaimer'); ?></textarea><br /><?php _e( 'Use shortcode', 'review-disclaimer' ); ?> <strong>[ReviewDisclaimer]</strong> <?php if( function_exists( 'has_blocks' ) ) { _e( 'Or use the Review Disclaimer Block.', 'review-disclaimer' ); } ?></td>
 				</tr>
 				<tr valign="top">
 					<td colspan="2"><input type="hidden" name="action" value="update" /><?php submit_button(); ?></td>
@@ -17,13 +29,10 @@
 		</form>
 	</div>
 	<div class="postbox">
-		<p>If this plugin has helped you out at all, please consider making a donation to encourage future updates.<br />Your generosity is appreciated!</p>
+		<p><?php _e( 'If this plugin has helped you out at all, please consider making a donation to encourage future updates.<br />Your generosity is appreciated!', 'review-disclaimer' ); ?></p>
 			<a href="#" onclick="window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9AGSF4W2HTR6W');">
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" width="147" height="47">
 			</a>
-		<p>To report any issues with <strong>this plugin</strong>, please visit the <a href="http://wordpress.org/support/plugin/review-disclaimer">support page on WordPress.org</a>.</p>
-		<p>For all other WordPress support, please check out the following <a href="https://surpriseazwebservices.com/services/wordpress-site-install/">site set-up</a>, <a href="https://surpriseazwebservices.com/services/wordpress-maintenance-support/">24x7 support</a>, and other <a href="https://surpriseazwebservices.com/services/">WordPress services</a>.</p>
-		<p><a href="https://twitter.com/SurpriseWebSvc" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @SurpriseWebSvc</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+		<p><?php echo $support_link; ?></p>
 	</div>
 </div>
