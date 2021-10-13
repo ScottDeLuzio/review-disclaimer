@@ -4,9 +4,9 @@
 	 Plugin URI: https://surpriseazwebservices.com/wordpress-plugins/review-disclaimer/
 	 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9AGSF4W2HTR6W
 	 Description: Use a shortcode or block to quickly insert product or service review disclaimers inside your posts.
-	 Version: 2.0.1
-	 Author: Scott DeLuzio
-	 Author URI: https://scottdeluzio.com
+	 Version: 2.0.2
+	 Author: AMP-MODE
+	 Author URI: https://amplifyplugins.com
 	 License: GPL2
 	 Text Domain: review-disclaimer
 	 */

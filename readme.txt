@@ -1,10 +1,10 @@
 === Review Disclaimer ===
-Contributors: scott.deluzio
+Contributors: scott.deluzio, ampmode
 Tags: plugin, shortcode, gutenberg, review, disclaimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9AGSF4W2HTR6W
 Requires at least: 3.1
-Tested up to: 5.5.0
-Stable tag: 2.0.1
+Tested up to: 5.8.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,10 @@ If you delete the text, and still have the shortcode inside a page or post, it w
 3. Your disclaimer is now in the body of your article to clearly identify that you are receiving compensation.
 
 == Changelog ==
+= 2.0.2 =
+* Updated tested up to version.
+* Added Contributors.
+
 = 2.0.1 =
 * Updated tested up to version.
 
@@ -80,5 +84,6 @@ If you delete the text, and still have the shortcode inside a page or post, it w
 * Initial release.
 
 == Upgrade Notice ==
-= 2.0.1 =
+= 2.0.2 =
 * Updated tested up to version.
+* Added Contributors.
